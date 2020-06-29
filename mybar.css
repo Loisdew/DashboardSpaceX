@@ -1,0 +1,163 @@
+div{
+    background-color: lightblue;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    width: 250px;
+    display: flex;
+}
+
+
+.div1{
+    height: 200px;
+}
+
+
+.div2{
+    height: 300px;    
+}
+
+
+.div3{
+    height: 200px;             
+}
+
+
+h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-family: helvetica;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+img{
+    position: absolute;
+    margin-left: -600px;
+    width: 18%;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
+
+/** Wanneer over de raket gehoverd wordt, beweegt hij naar rechts **/
+img:hover{
+    transform: translate(350px,0);
+    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
+    -o-transform: translate(350px,0); /** Opera **/
+    -moz-transform: translate(350px,0); /** Firefox **/
+}
+
+
+body, html{
+    width: 100%;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url('https://blenderartists.org/uploads/default/original/4X/7/e/2/7e2d7bea4ac21388c4a96e1371f375c4ce00094b.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+
+@media only screen and (min-width: 600px){
+    div{
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+
+    img{
+        width: 21%;
+    }
+
+}
+
+
+@media only screen and (min-width: 900px){
+    div{
+        width: 30%;
+        margin: 20px;
+    }
+
+
+    .div1{
+        width: 40%;
+        height: 200px;
+    }
+
+
+    .div2{
+        width: 30%;
+        height: 200px;
+    }
+
+
+    .div3{
+        width: 30%;
+        height: 200px;
+    }
+
+
+    h1{
+        font-size: 55px;
+    }
+
+
+    img{
+        width: 22%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1300px){
+    div{
+        width: 20%;
+
+    }
+
+
+    .div1{
+        width: 30%;
+        height: 200px;
+    }
+
+
+    .div2{
+        width: 20%;
+        height: 250px;
+    }
+
+
+    .div3{
+        width: 30%;
+        height: 200px;
+    }
+
+
+    h1{
+        font-size: 60px;
+        margin-top: 80px;
+    }
+
+
+    img{
+        width: 23%;
+    }
+
+}
